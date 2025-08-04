@@ -1,0 +1,6 @@
+Design a search data structure to store and show the most recent N searches.
+If the user doesn't select anything, we should return the top N searches. Given a search string, we should be able to store that search query in the most recently searches.
+
+essentially implement the following 2 methods:
+- addSearch(String searchQuery)
+- getMostRecentSearches()

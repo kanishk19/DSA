@@ -1,0 +1,4 @@
+The questions were -
+
+Given an inputString: "US,UK,UPS,5:US,CA,FedEx,3:CA,UK,DHL,7" (etc) find the cost to ship an item from X to Y (ie: US to UK ==> Cost of 5).
+From the previous solution, with the same inputString find the cost if you need to use an intermediate step. For instance US -> CA -> UK and it's associated cost.

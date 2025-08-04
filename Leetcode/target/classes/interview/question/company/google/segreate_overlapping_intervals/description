@@ -1,0 +1,31 @@
+Imagine you're developing a system for a restaurant to manage its staff. You're given the shift timings for various waiters. Each waiter's shift is defined by a start time and an end time.
+
+Your task is to identify and report all non-overlapping time intervals during which the exact set of waiters on duty remains constant. For each such interval, you need to list the waiters who are actively working.
+
+Input:
+You'll receive a collection of waiter shift records. For example, it might look something like this:
+
+Name            Start Time      End Time
+----------------------------------------
+Harry Puttar    10              100
+Tony Bhai Stark 60              120
+Sherlock Bholmes30              70
+Katniss Devi    150             300
+Output:
+Your output should be a list of intervals, where each interval specifies its start time, end time, and the sorted list of names of waiters who are on duty throughout that entire interval. The intervals should be contiguous and cover all periods where at least one waiter is on duty.
+
+For the example input above, the expected output would be:
+
+Start Time  End Time    Waiters on Duty
+-------------------------------------------------------
+10          30          Harry Puttar
+30          60          Harry Puttar, Sherlock Bholmes
+60          70          Harry Puttar, Sherlock Bholmes, Tony Bhai Stark
+70          100         Harry Puttar, Tony Bhai Stark
+100         120         Tony Bhai Stark
+150         300         Katniss Devi
+Constraints/Clarifications:
+
+A waiter is considered on duty from their startTime up to, but not including, their endTime. So, a shift [10, 100) means they are on duty at time 10, 99, but not 100.
+If multiple events (starts or ends) occur at the exact same time, how would you handle their order to correctly determine the state for the next interval?
+Consider efficiency: your solution should be robust enough for a moderate number of waiters (say, up to a few thousand) and their shifts.

@@ -1,0 +1,13 @@
+You and a friend have received a special gold chain as a gift.
+The chain links each have an integer weight, not necessarily the same.
+You and your friend must choose one of the links to be removed and provided to charity, after which the chain will be reconnected.
+After that, you can choose one place along the chain to split it in two, such that it creates two equally-weighted sections for you and your friend to take home.
+For a given input chain (list of link weights), determine if a solution is possible
+
+5 2 1 3 2 7
+
+Output : Yes.
+
+We can give 2 at index 1 to the charity.
+The remaining array would be 5 1 3 2 7.
+We can divide the remaining array into two parts (5 1 3) & (2 7).

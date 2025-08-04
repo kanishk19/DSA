@@ -1,0 +1,30 @@
+You are given:
+• A payment string
+• A list of invoice strings
+
+The payment string is a comma-separated string containing:
+
+The payment ID (e.g., “payment123”)
+The payment amount in USD minor units (e.g., $1.00 = 100)
+The memo line, which always follows the format “Paying off: {INVOICE_ID}”
+Each invoice string is also comma-separated and contains:
+
+The invoice ID
+The due date of the invoice (e.g., “2024-01-01”)
+The amount due in USD minor units
+You need to:
+• Parse the payment and invoices.
+• Find the invoice mentioned in the memo line.
+• Output a formatted string describing the reconciliation.
+
+Input Example:
+payment = "payment5,1000,Paying off: invoiceC"
+invoices = [
+"invoiceA,2024-01-01,100",
+"invoiceB,2024-02-01,200",
+"invoiceC,2023-01-30,1000"
+]
+
+Expected Output:
+payment5 pays off 1000 for invoiceC due on 2023-01-30
+

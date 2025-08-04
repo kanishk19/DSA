@@ -1,0 +1,2 @@
+You have a very very big number 2123470299109372 and a given integer k [let's say k=6],
+you need to find largest k digit number which is a subsequence of the original number. ans=999372

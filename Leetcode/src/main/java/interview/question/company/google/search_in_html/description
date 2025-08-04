@@ -1,0 +1,47 @@
+You are given a data structure of HTML Content and tags. Looks like this. A node can be an html tag OR a string text.
+
+class Node{
+	bool isText();
+	string getText();
+	vector<Node*> getChildren();
+}
+You need to implement a method that takes in Head of the node and a string to search. And you should return the nodes that cover the search string within the structure.
+
+<span><b>This</b> is a <i>funny Text.</i> </span>
+
+         <span> 1
+         /  |   \
+        /   |    \
+       /    |     \
+     2<b> 4" is a"  <i>5
+     /				 \
+    /				  \
+   /				   \
+3"This"				" funny Text."6
+Case 1: Search = "is a"
+Returns Node 4
+
+Case 2: Search "a fun"
+Returns Node 4 and Node 6.
+
+
+------------------------------------------------------------------------
+
+Given a DOM for a html doc. Implement the "containsText" function.
+
+class Node {
+    List<Node> getAllChildren();
+	String getText();
+	Node getParent();
+	boolean isText();
+}
+Example:
+
+Input: <span><b>this</b> is <i> it </i></span>
+
+Sample Query:
+containsText("his is"); // true
+containsText("his it"); // false
+containsText("this"); // true
+containsText("this is"); // true
+Unfortunately I was not able to understand the Ques. and all time got wasted in the clarification. I managed to write a working code in the last 5-10 mins of the Interview.

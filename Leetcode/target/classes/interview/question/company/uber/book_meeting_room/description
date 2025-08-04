@@ -1,0 +1,1 @@
+Design a Reservation System where you are given a list of rooms [roomA, roomB, ...] and starTime and endTime of a meeting. Write a method scheduleMeeting(startTime, endTime) whick books a room if any room is available for that particular time period and returns the roomId , else errors out.

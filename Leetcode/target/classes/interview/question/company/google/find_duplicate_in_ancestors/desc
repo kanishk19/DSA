@@ -1,0 +1,37 @@
+Find Duplicates in Ancestors
+Problem Statement:
+You're given a tree structure where each node represents a directory with a unique ID and a name.
+
+struct Node {
+    int id;
+    string name;
+    vector<Node*> directories; // children
+};
+Your task is:
+For each node, check whether any of its ancestors (up to the root) have the same name.
+If a duplicate is found, print the id of that node.
+
+Example:
+Consider the following structure:
+
+a
+└── b
+    └── c
+        └── b  <- duplicate (same name "b" as ancestor)
+Output: id of second b (since it shares the name with its ancestor).
+📌 Question 2: Find Duplicates within K Ancestors
+Modified Task:
+Same as above, but only check up to the last K ancestors.
+
+If the duplicate occurs beyond K levels up, ignore it.
+Example (K = 2):
+
+a
+└── b
+    └── c
+        └── d
+            └── e
+                └── b  <- NOT a duplicate (original "b" is more than 2 levels up)
+Output: None
+If K = 5, then the second "b" would be considered a duplicate.
+
